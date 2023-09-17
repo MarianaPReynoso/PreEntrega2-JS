@@ -1,7 +1,9 @@
+const listaNombres = [];
+
 let nombre = prompt("Ingrese su nombre:").toUpperCase();
 let apellido = prompt ("Ingrese su apellido:").toUpperCase();
 let nombreCompleto = nombre + " " + apellido;
-alert ("¡Bienvenido! " + nombreCompleto);
+alert ("¡Bienvenido! " + nombreCompleto)
 
 let pedirPrestamo = prompt("¿Le gustaría solicitar un préstamo con nosotros? (Si, No)").toUpperCase();
 let valorPrestamo;  
@@ -55,6 +57,9 @@ if (pedirPrestamo == "SI"){
     let valorCuota = cuotaPura + interesPorCuota + interesTnaCuota + interesTeaCuota + interesCfteaCuota;
 
     alert(`Su préstamo de $${valorPrestamo} será devuelto en ${cantidadCuotas} cuotas con un interés del ${interesCuota}%. Cada cuota tendrá un valor de $${valorCuota.toFixed(2)}`)
+
+    listaNombres.push(nombreCompleto);
+    console.log(listaNombres);
 }else{
     alert("¡Lo invitamos a seguir navegando!");
 }
