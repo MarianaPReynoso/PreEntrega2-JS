@@ -3,7 +3,6 @@ function Prestamo (nombre, montoMaximo) {
     this.monto = montoMaximo;
 }
 
-
 function cuotas(){
     let cantidadCuotas = parseInt(prompt("Indique la cantidad de cuotas (12/24/36):"));
 
